@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Validator</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- <div class = 'wrapper'> -->
+        <!-- <nav class = "bokovoe_menu">
+            <ul class = "nav_list">
+                <li><a href = "#section1" class = 'btn'></a></li>
+                <li><a href = "#section2" class = 'btn'></a></li>
+                <li><a href = "#section3" class = 'btn'></a></li>
+            </ul>
+        </nav> -->
+        <nav class = bokovoe-menu>
+            <ul id = "bokovoe-menu__list">
+                <li class = "bokovoe-menu__listItem"><a><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span></a></li>
+                <li class = "bokovoe-menu__listItem"><a><span class="icon"><i class="fa fa-calculator" aria-hidden = "true" id = "fa-calc"></i></span></a></li>
+                <li class = "bokovoe-menu__listItem"><a><span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i></span></a></li>
+            </ul>
+        </nav>
+        <section class = "section active" id ="section1">
+            <nav class = "menu">
+                <div class = 'left_menu'>
+                    <img src = 'images/logo.png'>
+                    <div class = 'logo_name'>VALIDO</div>
+                </div>
+                <!-- <div class = 'right_menu'>
+                    <a href = '#section3' class = 'right_navigator'>Contact</a>
+                    <a href = "#section3" class = 'right_navigator'>FAQ</a>
+                </div> -->
+            </nav>
+            <div class = "sec1_center_hl">
+                We help people with our
+            </div>
+            <svg height="100%" width="100%">
+                <clipPath id = "text-overlay">
+                    <text x = "50%" y = "44%" fill ="white" text-anchor="middle">
+                        validator.
+                    </text>
+                </clipPath>
+            </svg>
+            <video src="videos/phon2.mp4" autoplay loop muted></video>
+
+            <div class = "sec1_center_text">
+                One of the best validators that will show you results in the shortest amount of time
+            </div>
+           
+            <div class = 'scroll_item'></div>
+        </section>
+        <section class = "section" id ="section2">
+            <div id = "results">
+                <div id = "res_button">
+                    <img src = "images/krestik.png">
+                </div>
+                <div class = "reshl">
+                    <img src = "images/card_logo.png" width = "30px" height = "30px">
+                    <h1 class = "number_details">CARD DETAILS</h1>
+                </div>
+                <div class = results_str>
+                    <div class = "numres" id = "numres">
+                        Is valid: 
+                    </div>
+                    <div class = "numres_show" id = "numres_show">
+                        -
+                    </div>
+                </div>
+                <div class = results_str>
+                    <div class = "typeres" id = "typeres">
+                        Card payment system: 
+                    </div>
+                    <div class = "typeres_show" id = "typeres_show">
+                        -
+                    </div>
+                </div>
+            </div>
+            <div class = 'main_sec' id = "main_sec">
+                <div class = 'hello'>Your data</div>
+                <form method = 'POST' id = "forma">
+                    <div class="user-box">
+                        <input type="text" id="fname" name="fname" autocomplete = "off" required>
+                        <label for="fname">Your name</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="text" id="card" name="card" autocomplete = "off" required>
+                        <label for="">Card number</label>
+                    </div>
+                    <a href="#" id="submit_form">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <input type="submit" id = "submit" value = "Submit">
+                    </a>
+                </form>
+                <div class = "generators">
+                    <div id = "generator">Generate valid card number</div>
+                    <div id = "generated_block"></div>
+                </div>
+            </div>
+        </section>
+        <section class = "section" id ="section3">
+            <div class = "block_voprosov">
+                <div class = "faq">
+                    <div class = question>What does this validator can?</div>
+                    <div class = "answer" id = "answer1">
+                        It cheks if your card number is valid or not. Also there is our generator that makes valid card numbers
+                    </div>
+                    <div class="arrow-icon">
+                        <svg class = "svg-arr" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                            <polygon points="12 17.414 3.293 8.707 4.707 7.293 12 14.586 19.293 7.293 20.707 8.707 12 17.414"/>
+                          </svg>
+                    </div>
+                    <hr class="hr-line">
+                </div>
+                <div class = "faq">
+                    <div class = question>How does the validator works?</div>
+                    <div class = "answer" id = "answer2">
+                        It uses Luna's algorithm. You can find it for free in the web
+                    </div>
+                    <div class="arrow-icon">
+                        <svg class = "svg-arr" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                            <polygon points="12 17.414 3.293 8.707 4.707 7.293 12 14.586 19.293 7.293 20.707 8.707 12 17.414"/>
+                          </svg>
+                    </div>
+                    <hr class="hr-line">
+                </div>
+                <div class = "faq">
+                    <div class = question>Do you save card numbers?</div>
+                    <div class = "answer" id = "answer3">
+                        No, definitely not. This is your personal data
+                    </div>
+                    <div class="arrow-icon">
+                        <svg class = "svg-arr" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                            <polygon points="12 17.414 3.293 8.707 4.707 7.293 12 14.586 19.293 7.293 20.707 8.707 12 17.414"/>
+                          </svg>
+                    </div>
+                    <hr class="hr-line">
+                </div>
+              
+            </div>
+            <footer class ="footer">
+                <div class = "footer_left">
+                    <div class = "footer_left_p1">&copy2022</div>
+                    <div class = "footer_left_p2">VALIDO</div>
+                </div>
+                <div class = "footer_center">
+                    <img src = "images/logo.png">
+                </div>
+                <div class = "footer_right">
+                    <a href ="#" class = "footer_soc_link">
+                        <img src ="images/youtube.png">
+                    </a>
+                    <a href ="#" class = "footer_soc_link">
+                        <img src ="images/instagram.png">
+                    </a>
+                    <a href ="#" class = "footer_soc_link">
+                        <img src ="images/twitter.png">
+                    </a>
+                </div>
+            </footer>
+
+        </section>
+    <!-- </div> -->
+    <script src = 'script1.js'></script>
+    <script src = 'script.js'></script>
+</body>
+</html>
+
